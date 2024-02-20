@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+:root {
+  --scrollbg-light: #f0f0f0;
+  --scroll-light: #888;
+}
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --scrollbg-dark: #1e1e1e;
+    --scroll-dark: #ccc;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  border-radius: 30px;
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+}
+@media (prefers-color-scheme: light) {
+  ::-webkit-scrollbar-track {
+    background-color: var(--scrollbg-light);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-light);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background-color: var(--scrollbg-dark);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-dark);
+  }
+}
